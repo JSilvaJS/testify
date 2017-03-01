@@ -14,7 +14,7 @@ GildedRose.prototype.normalTick = function () {
 
 GildedRose.prototype.agedBrieTick = function () {
   this.sellIn -= 1;
-  if (this.sellIn <= 5) { this.quality += 1;}
+  this.quality += 1;
   if (this.sellIn <= 0) { this.quality += 1;}
   if (this.quality > 50) { this.quality = 50;}
 }
@@ -40,6 +40,7 @@ GildedRose.prototype.conjuredTick = function () {
 // --------------------------------------------------------------------------------------
 
 GildedRose.prototype.tick = function () {
+
   if (this.name === 'normal') {this.normalTick(); }
 
   if (this.name === 'Aged Brie') {this.agedBrieTick(); }
@@ -50,7 +51,6 @@ GildedRose.prototype.tick = function () {
 
   if (this.name === 'Conjured Mana Cake') {this.conjuredTick(); }
 
-  
 }
 
 export { GildedRose };
