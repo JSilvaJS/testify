@@ -40,30 +40,15 @@ GildedRose.prototype.conjuredTick = function () {
 // --------------------------------------------------------------------------------------
 
 GildedRose.prototype.tick = function () {
-  if (this.name === 'normal') {
-    this.normalTick();
-    return;
-  }
+  if (this.name === 'normal') {this.normalTick(); }
 
-  if (this.name === 'Aged Brie') {
-    this.agedBrieTick();
-    return;
-  }
+  if (this.name === 'Aged Brie') {this.agedBrieTick(); }
 
-  if (this.name === 'Sulfuras, Hand of Ragnaros') {
-    this.sulfurasTick();
-    return;
-  }
+  if (this.name === 'Sulfuras, Hand of Ragnaros') {this.sulfurasTick(); }
 
-  if (this.name === 'Backstage passes to a TAFKAL80ETC concert') {
-    this.backstageTick();
-    return;
-  }
+  if (this.name === 'Backstage passes to a TAFKAL80ETC concert') {this.backstageTick(); }
 
-  if (this.name === 'Conjured Mana Cake') {
-    this.conjuredTick();
-    return;
-  }
+  if (this.name === 'Conjured Mana Cake') {this.conjuredTick(); }
 
   
 }
